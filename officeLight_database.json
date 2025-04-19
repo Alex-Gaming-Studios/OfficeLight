@@ -1,0 +1,21 @@
+{
+  "users": [
+    {
+      "username": "demoUser",
+      "email": "demo@example.com",
+      "password": "hashed_example_password",
+      "license": "OfficeLight",
+      "registered": true
+    }
+  ],
+  "licenses": {
+    "used": [],
+    "available": {
+      "Office": [],
+      "OfficePro": [],
+      "Worker": [],
+      "Admin": [],
+      "ExtraPro": []
+    }
+  }
+}
