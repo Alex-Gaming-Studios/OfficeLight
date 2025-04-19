@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>OfficeLight - Editor</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #eef2f5; }
+    header {
+      background-color: #007bff;
+      color: white;
+      padding: 10px 20px;
+      text-align: center;
+    }
+    .toolbar {
+      display: flex;
+      flex-wrap: wrap;
+      background: #ffffff;
+      padding: 10px;
+      border-bottom: 1px solid #ccc;
+    }
+    .toolbar button {
+      margin-right: 5px;
+      padding: 8px 10px;
+      cursor: pointer;
+    }
+    #editor {
+      width: 100%;
+      height: 80vh;
+      padding: 20px;
+      border: none;
+      outline: none;
+      background: white;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>OfficeLight Editor</h1>
+  </header>
+  <div class="toolbar">
+    <button onclick="execCmd('bold')"><b>Bold</b></button>
+    <button onclick="execCmd('italic')"><i>Italic</i></button>
+    <button onclick="execCmd('underline')"><u>Underline</u></button>
+    <button onclick="execCmd('justifyLeft')">Left</button>
+    <button onclick="execCmd('justifyCenter')">Center</button>
+    <button onclick="execCmd('justifyRight')">Right</button>
+    <button onclick="execCmd('insertUnorderedList')">• List</button>
+    <button onclick="execCmd('insertOrderedList')">1. List</button>
+    <button onclick="execCmd('undo')">Undo</button>
+    <button onclick="execCmd('redo')">Redo</button>
+  </div>
+  <iframe id="editor"></iframe>
+
+  <script>
+    const editor = document.getElementById("editor");
+    editor.contentDocument.designMode = "on";
+
+    function execCmd(command) {
+      editor.contentDocument.execCommand(command, false, null);
+    }
+  </script>
+</body>
+</html>
