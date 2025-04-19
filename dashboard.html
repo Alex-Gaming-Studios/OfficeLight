@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>OfficeLight - Dashboard</title>
+  <style>
+    body { font-family: Arial, sans-serif; background-color: #f4f6f8; padding: 50px; }
+    .dashboard {
+      max-width: 500px;
+      margin: auto;
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+    h2 { color: #333; margin-bottom: 20px; }
+    .btn {
+      display: block;
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      font-size: 16px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      text-decoration: none;
+    }
+    .btn:hover {
+      background-color: #0056b3;
+    }
+    .logout-btn {
+      background-color: #dc3545;
+    }
+    .logout-btn:hover {
+      background-color: #c82333;
+    }
+  </style>
+</head>
+<body>
+  <div class="dashboard">
+    <h2>Willkommen bei OfficeLight, <span id="username">Nutzer</span>!</h2>
+    <a href="profile.html" class="btn">Profil anzeigen</a>
+    <a href="license_input.html" class="btn">Lizenzcode eingeben</a>
+    <a href="editor.html" class="btn">OfficeLight Editor öffnen</a>
+    <button onclick="logout()" class="btn logout-btn">Logout</button>
+  </div>
+
+  <script>
+    const username = localStorage.getItem("username") || "Gast";
+    document.getElementById("username").textContent = username;
+
+    function logout() {
+      localStorage.clear();
+      window.location.href = "login_connected.html";
+    }
+  </script>
+</body>
+</html>
