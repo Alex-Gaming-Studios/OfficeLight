@@ -13,12 +13,13 @@ Diese Lizenz basiert auf der MIT-Lizenz, wurde jedoch von **Alex Gaming Studios�
 
 Copyright (c) 2025 Alex Gaming Studios™
 
-Hiermit wird unentgeltlich jeder Person, die eine Kopie der Software und der zugehörigen Dokumentation (die "Software") erhält, die Erlaubnis erteilt, uneingeschränkt mit der Software zu handeln, einschließlich und ohne Einschränkung des Rechts, sie zu verwenden, zu kopieren, zu modifizieren, zusammenzuführen, zu veröffentlichen, zu verbreiten, unterzulizenzieren und/oder zu verkaufen, und Personen, denen diese Software bereitgestellt wird, dies unter den folgenden Bedingungen zu erlauben:
+Hiermit wird unentgeltlich jeder Person, die eine Kopie der Software und der zugehörigen Dokumentation (die "Software") erhält, die Erlaubnis erteilt, mit der Software zu arbeiten, einschließlich und ohne Einschränkung des Rechts, sie zu verwenden, zu kopieren, zu modifizieren, zusammenzuführen, zu veröffentlichen und weiterzugeben – unter folgenden Bedingungen:
 
-Der obige Urheberrechtsvermerk und dieser Erlaubnisvermerk sind in allen Kopien oder wesentlichen Teilen der Software beizulegen. Änderungen gegenüber der MIT-Lizenz müssen deutlich kenntlich gemacht werden.
-
-**Hinzugefügt:**  
-Diese Software enthält ein Lizenz-Upgrade-System (Office → OfficePro), Cloud-Anbindung, Werbung in kostenlosen Versionen sowie einen Code-Verifizierungssystem für Lizenzschlüssel. Der Lizenzcodegenerator ist urheberrechtlich geschützt.
+- Der obige Urheberrechtsvermerk und dieser Erlaubnisvermerk müssen in allen Kopien oder wesentlichen Teilen der Software enthalten sein.
+- **Diese Software darf NICHT verkauft oder kommerziell weiterverbreitet werden.**
+- **Unveränderte Kopien oder Updates ohne sichtbare, dokumentierte Anpassungen sind NICHT erlaubt.**
+- **Bei Verwendung dieser Vorlage muss "Alex Gaming Studios™" klar als Quelle genannt werden.**
+- **Eigene Änderungen müssen als solche kenntlich gemacht werden.**
 
 DIE SOFTWARE WIRD OHNE JEGLICHE GARANTIE BEREITGESTELLT, WEDER AUSDRÜCKLICH NOCH STILLSCHWEIGEND, EINSCHLIESSLICH ABER NICHT BESCHRÄNKT AUF DIE GARANTIEN DER MARKTGÄNGIGKEIT, DER EIGNUNG FÜR EINEN BESTIMMTEN ZWECK UND DER NICHTVERLETZUNG. IN KEINEM FALL SIND DIE AUTOREN ODER COPYRIGHTINHABER FÜR JEGLICHE ANSPRÜCHE, SCHÄDEN ODER SONSTIGE HAFTUNGEN VERANTWORTLICH, OB IN EINER VERTRAGS- ODER KLAGEHANDLUNG ODER ANDERWEITIG, DIE SICH AUS DER SOFTWARE ODER DER VERWENDUNG ODER ANDEREN GESCHÄFTEN MIT DER SOFTWARE ERGEBEN.
 
@@ -29,4 +30,4 @@ DIE SOFTWARE WIRD OHNE JEGLICHE GARANTIE BEREITGESTELLT, WEDER AUSDRÜCKLICH NOC
 © 2025 **Alex Gaming Studios™**  
 Alle Rechte vorbehalten.  
 OfficeLight ist geistiges Eigentum von **Alex Gaming Studios™**.  
-Diese Lizenz darf nur als Vorlage verwendet werden, wenn Änderungen eindeutig gemacht und die Quelle genannt wird.
+Diese Lizenz darf nur als Vorlage genutzt werden, wenn **Anpassungen sichtbar gemacht werden** und **die Originalquelle genannt wird**. **Verkauf ist untersagt.**
