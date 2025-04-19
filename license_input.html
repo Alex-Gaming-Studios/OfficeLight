@@ -1,68 +1,63 @@
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>OfficeLight - Lizenz aktivieren</title>
+  <title>Lizenz aktivieren</title>
   <style>
-    body { font-family: Arial, sans-serif; background-color: #f4f6f8; padding: 50px; }
-    .container {
-      max-width: 400px;
-      margin: auto;
-      background: white;
-      padding: 30px;
-      border-radius: 10px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-      text-align: center;
-    }
+    body { font-family: Arial, sans-serif; background-color: #f2f2f2; padding: 50px; text-align: center; }
+    h1 { margin-bottom: 30px; }
     input[type="text"] {
-      width: 100%;
-      padding: 10px;
-      margin: 15px 0;
-      border: 1px solid #ccc;
-      border-radius: 5px;
+      padding: 12px;
+      width: 300px;
+      font-size: 16px;
+      margin-bottom: 20px;
     }
     button {
-      padding: 10px 20px;
+      padding: 12px 25px;
+      font-size: 16px;
       background-color: #007bff;
       color: white;
       border: none;
-      border-radius: 5px;
+      border-radius: 6px;
       cursor: pointer;
     }
     button:hover {
       background-color: #0056b3;
     }
-    .msg { margin-top: 20px; font-weight: bold; }
+    #result {
+      margin-top: 20px;
+      font-size: 16px;
+      color: green;
+    }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h2>Lizenzcode eingeben</h2>
-    <input type="text" id="licenseCode" placeholder="Gib deinen Lizenzcode ein" />
-    <button onclick="activateLicense()">Aktivieren</button>
-    <div class="msg" id="message"></div>
-  </div>
+  <h1>Lizenzschlüssel eingeben</h1>
+  <input type="text" id="licenseCode" placeholder="Lizenzcode hier eingeben" />
+  <br>
+  <button onclick="activateLicense()">Lizenz aktivieren</button>
+  <p id="result"></p>
 
   <script>
-    async function activateLicense() {
-      const code = document.getElementById("licenseCode").value;
-      const email = localStorage.getItem("email");
-      const res = await fetch("http://localhost:3000/activate-license", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ email, code })
-      });
+    const officeCodes = JSON.parse(localStorage.getItem("officeCodes") || "[]");
+    const proCodes = JSON.parse(localStorage.getItem("proCodes") || "[]");
 
-      const data = await res.json();
-      const msg = document.getElementById("message");
-      if (res.ok) {
-        msg.textContent = data.message;
-        msg.style.color = "green";
+    // Beispielcodes (diese sollten später vom Backend/Datenbank kommen)
+    const validOffice = ["OFC-9832-FKL3-2942", "OFC-1832-MZLE-4823"];
+    const validPro = ["PRO-7712-ACD9-WQ02"];
+
+    function activateLicense() {
+      const code = document.getElementById("licenseCode").value.trim();
+      if (validPro.includes(code)) {
+        localStorage.setItem("license", "OfficePro");
+        document.getElementById("result").textContent = "OfficePro erfolgreich aktiviert!";
+      } else if (validOffice.includes(code)) {
+        localStorage.setItem("license", "Office");
+        document.getElementById("result").textContent = "Office erfolgreich aktiviert!";
       } else {
-        msg.textContent = data.message;
-        msg.style.color = "red";
+        document.getElementById("result").textContent = "Ungültiger Lizenzcode.";
+        document.getElementById("result").style.color = "red";
       }
     }
   </script>

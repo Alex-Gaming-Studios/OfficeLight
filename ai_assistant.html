@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>OfficeLight KI-Hilfe</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      padding: 40px;
+      text-align: center;
+    }
+    h1 {
+      margin-bottom: 30px;
+    }
+    input[type="text"] {
+      width: 60%;
+      padding: 12px;
+      font-size: 16px;
+    }
+    button {
+      padding: 12px 20px;
+      font-size: 16px;
+      margin-left: 10px;
+      background-color: #28a745;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #218838;
+    }
+    #response {
+      margin-top: 30px;
+      font-size: 18px;
+      color: #333;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  </style>
+</head>
+<body>
+  <h1>OfficeLight KI-Assistent</h1>
+  <input type="text" id="userInput" placeholder="Wie kann ich dir helfen?" />
+  <button onclick="askAI()">Fragen</button>
+  <div id="response">Antwort erscheint hier...</div>
+
+  <script>
+    function askAI() {
+      const input = document.getElementById("userInput").value.trim().toLowerCase();
+      let answer = "Das habe ich leider nicht verstanden.";
+
+      if (input.includes("tabelle") || input.includes("excel")) {
+        answer = "Zum Erstellen von Tabellen kannst du das Tabellenmodul in OfficeLight verwenden.";
+      } else if (input.includes("text") || input.includes("word")) {
+        answer = "Du kannst das Textmodul nutzen, um Texte zu erstellen und zu speichern.";
+      } else if (input.includes("präsentation")) {
+        answer = "Für Präsentationen steht dir das Präsentationsmodul zur Verfügung.";
+      } else if (input.includes("speichern")) {
+        answer = "Du kannst deine Datei über das Dateimenü als TXT-Datei speichern.";
+      } else if (input.includes("lizenz")) {
+        answer = "Lizenzcodes können über die Lizenzseite eingegeben werden.";
+      }
+
+      document.getElementById("response").textContent = answer;
+    }
+  </script>
+</body>
+</html>
