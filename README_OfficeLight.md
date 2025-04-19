@@ -62,4 +62,4 @@ npm start
 
 ## Lizenz
 
-© 2025 Alex-Gaming-Studios – Alle Rechte vorbehalten.
+© 2025 Alex Gaming Studios – Alle Rechte vorbehalten.
