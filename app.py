@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
-    return render_template('index.html')  # Lade deine index.html Seite
+    return render_template('index.html')  # Lade die index.html Seite
 
 if __name__ == '__main__':
     import os
