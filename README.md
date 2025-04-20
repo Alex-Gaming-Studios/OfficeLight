@@ -84,7 +84,7 @@ Lizenz-Infos: siehe LICENSE.md
 
 ## Links
 
-- **Live-Test:** https://alexgaming-studios.github.io/OfficeLight/login.html
+- **Live-Test:** https://alexgaming-studios.github.io/OfficeLight/dashboard.html
 - **GitHub:** https://github.com/Alex-Gaming-Studios/OfficeLight  
 - **Support / Feedback:** alexgaming.padh@icloud.com  
 
