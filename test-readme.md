@@ -18,16 +18,6 @@ Erlebe ein modernes, KI-gestütztes Office-System mit Word-, Excel- und Präsent
 
 ---
 
-## Vorschau
-
-![OfficeLight Interface Vorschau](https://raw.githubusercontent.com/Alex-Gaming-Studios/OfficeLight/main/assets/screenshots/preview-light.gif)  
-_Light Mode_
-
-![Dark Mode Vorschau](https://raw.githubusercontent.com/Alex-Gaming-Studios/OfficeLight/main/assets/screenshots/preview-dark.gif)  
-_Dark Mode_
-
----
-
 ## Lizenzsystem
 
 | Lizenzstufe  | Werbung     | Funktionen freigeschaltet             |
