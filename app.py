@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def home():
-    return "OfficeLight läuft!"
+    return "OfficeLight Server läuft!"
 
 if __name__ == "__main__":
     app.run()
