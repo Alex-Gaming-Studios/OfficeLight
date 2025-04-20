@@ -94,7 +94,6 @@ Lizenz-Infos: siehe LICENSE.md
 
 ## Links
 
-- **Live-Demo:** https://officelight-datenbank.onrender.com  
 - **GitHub:** https://github.com/Alex-Gaming-Studios/OfficeLight  
 - **Support / Feedback:** alexgaming.padh@icloud.com  
 
